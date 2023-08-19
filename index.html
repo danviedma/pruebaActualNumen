@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_icon.css">
+    <link rel="stylesheet" href="estilos.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script defer src="funciones.js"></script>
+    <title>Tarea1</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-logo">
+            <!-- <img src="./imagenes/logo2.png" alt="" width="70"> -->
+            <span class="icon-home"></span>
+            <span>EGAÑA <br>PROPIEDADES</span>
+        </div>
+        <ul id="list-header">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="arriendo.html">Arriendo</a></li>
+            <li><a href="venta.html">Venta</a></li>
+            <li><a href="acerca.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="container-icon">
+            <span class="icon-facebook2"></span>
+            <span class="icon-instagram"></span>
+            <span class="icon-linkedin"></span>
+        </div>
+
+    </header>
+    <main>
+        <div class="home">
+            <section id="container-slider">
+                <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev"><i
+                        class="fas fa-chevron-circle-left"></i></a>
+                <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext"><i
+                        class="fas fa-chevron-circle-right"></i></a>
+                <ul class="listslider">
+                    <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+                    <li><a itlist="itList_1" href="#"></a></li>
+                    <li><a itlist="itList_2" href="#"></a></li>
+                </ul>
+                <ul id="slider">
+                    <li style="background-image: url('imagenes/casa05.jpg'); z-index:0; opacity: 1;">
+                        <div class="content_slider">
+                            <div>
+                                <h2>Vende o Arrienda con nosotros</h2>
+                                <p>Te acompañamos y asesoramos durante todo el proceso</p>
+                                <a href="#" target="_blank" class="btnSlider">Acceder</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url('imagenes/casa04.jpg'); ">
+                        <div class="content_slider">
+                            <div>
+                                <h2>Busca tu mejor inversión</h2>
+                                <p>Encuentra lo que siempre has soñado</p>
+                                <a href="#" target="_blank" class="btnSlider">Acceder</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url('imagenes/casa03.jpg'); ">
+                        <div class="content_slider">
+                            <div>
+                                <h2>Tenemos muy buenas ofertas</h2>
+                                <p>Las comisiones más bajas</p>
+                                <a href="#" target="_blank" class="btnSlider">Acceder</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="content-form">
+            <h2 class="find">Busca tu propiedad</h2>
+            <form action="">
+                <div class="form">
+                    <div class="form-box">
+                        <label for="">Operación</label>
+                        <select placeholder="Operación" class="top">
+                            <option value="">Cualquiera</option>
+                        </select>
+                    </div>
+                    <div class="form-box">
+                        <label for="">Tipo de Propiedad</label>
+                        <select placeholder="Cualquiera" class="top">
+                            <option value="">Cualquiera</option>
+                        </select>
+                    </div>
+                    <div class="form-box">
+                        <label for="">Moneda</label>
+                        <select placeholder="$" class="top">
+                            <option value="">$</option>
+                            <option value="">UF</option>
+                        </select>
+                    </div>
+                    <div class="form-box">
+                        <label for="">Comuna</label>
+                        <select placeholder="Cualquiera" class="top">
+                            <option value="">Cualquiera</option>
+                        </select>
+                    </div>
+                    <div class="form-box">
+                        <label for="">Precio Desde</label>
+                        <select placeholder="Cualquiera" class="top">
+                            <option value="">Cualquiera</option>
+                        </select>
+                    </div>
+                    <div class="form-box">
+                        <label for="">Precio Hasta</label>
+                        <select placeholder="Cualquiera" class="top">
+                            <option value="">Cualquiera</option>
+                        </select>
+                    </div>
+                    <div class="form-box">
+                        <label for="">Habitaciones</label>
+                        <select placeholder="Cualquiera" class="top">
+                            <option value="">Cualquiera</option>
+                        </select>
+                    </div>
+                    <div class="form-box">
+                        <button id="form-button">Buscar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h2 class="find">Propiedades destacadas</h2>
+            <!-- en este contenedor div irán las propiedades más destacadas que están en venta o arriendo -->
+            <div class="card-container-grid">
+                <figure class="card-figure">
+                    <img src="./imagenes/casa4.jpg" alt="">
+                    <figcaption class="card-paragraph">
+                        <h3>Casa en Las Condes</h3>
+                        <p>Descripcion Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, enim accusamus
+                            dolorum ipsam dolorem, modi facere provident optio, quo officiis repudiandae vero fuga
+                        </p>
+                        <p>Venta: 8000 UF</p>
+                        <div class="details-home">
+
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="card-figure">
+                    <img src="./imagenes/casa5.jpg" alt="">
+                    <figcaption class="card-paragraph">
+                        <h3>Propiedad en Arriendo</h3>
+                        <p>Amplia casa <br> 4 Habitaciones <br> 3 Baños </p>
+                    </figcaption>
+                </figure>
+                <figure class="card-figure">
+                    <img src="./imagenes/casa6.jpg" alt="">
+                    <figcaption class="card-paragraph">
+                        <h3>Propiedad en Arriendo</h3>
+                        <p>Amplia casa <br> 4 Habitaciones <br> 3 Baños </p>
+                    </figcaption>
+                </figure>
+                <figure class="card-figure">
+                    <img src="./imagenes/casa4.jpg" alt="">
+                    <figcaption class="card-paragraph">
+                        <h3>Propiedad en Arriendo</h3>
+                        <p>Amplia casa <br> 4 Habitaciones <br> 3 Baños </p>
+                    </figcaption>
+                </figure>
+                <figure class="card-figure">
+                    <img src="./imagenes/casa5.jpg" alt="">
+                    <figcaption class="card-paragraph">
+                        <h3>Propiedad en Arriendo</h3>
+                        <p>Amplia casa <br> 4 Habitaciones <br> 3 Baños </p>
+                    </figcaption>
+                </figure>
+                <figure class="card-figure">
+                    <img src="./imagenes/casa6.jpg" alt="">
+                    <figcaption class="card-paragraph">
+                        <h3>Propiedad en Arriendo</h3>
+                        <p>Amplia casa <br> 4 Habitaciones <br> 3 Baños </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="container-services">
+            <img src="./imagenes/bg04.jpg" alt="" class="bg-img-center">
+            <h2>Servicios</h2>
+            <div class="container-services-type">
+                <div class="service-a">
+                    <span class="icon-coin-dollar"></span>
+                    <h3>Venta</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio maiores cumque impedit
+                        <br>accusamus
+                        fugit consequatur
+                    </p>
+                </div>
+                <div class="service-a">
+                    <span class="icon-coin-dollar"></span>
+                    <h3>Arriendo</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio maiores cumque impedit accusamus
+                        fugit consequatur </p>
+                </div>
+                <div class="service-a">
+                    <span class="icon-users"></span>
+                    <h3>Asesorías</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio maiores cumque impedit accusamus
+                        fugit consequatur </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="grid-info">
+            <div class="container-logo-footer">
+                <span class="icon-home2"></span>
+                <span>EGAÑA <br>PROPIEDADES</span>
+            </div>
+            <div>
+                <p id="info-p">Entregamos un acesoramiento integral y personalizado, para que te
+                    sientas tranquilo en el proceso de arriendo o venta de tu propiedad. Nuestra empresa cuenta con
+                    profesionales ágiles y motivados que ayudarán oportunamente en todo el proceso de gestión de tu
+                    propiedad.
+                </p>
+            </div>
+        </div>
+        <div class="grid-contact-media">
+            <div class="contact-media">
+                <h3>Contacto</h3>
+                <p>Av. Providencia 2559 Of. 4</p>
+                <p>+56 2 22340317</p>
+                <p>+56 9 91509372</p>
+            </div>
+            <div class="container-icon-footer">
+                <span class="icon-facebook2"></span>
+                <span class="icon-instagram"></span>
+                <span class="icon-linkedin"></span>
+            </div>
+
+        </div>
+        <div class="container-copyright">
+            <p>&copy 2023 <b>Egaña Propiedades.</b> Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>
